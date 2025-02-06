@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de imagenes</title>
+    <style>
+        .galeria{
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .grande{
+            width: 500px;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
     <h1>BIENVENIDOS A MI GALERIA</h1>
-    <div>
-        <img src="mico.jpg" onclick="grande(this.src)">
-        <img src="buo.jpg" onclick="grande(this.src)">  
-        <img src="colibri.jpg" onclick="grande(this.src)">
-        <img src="loro.jpg" onclick="grande(this.src)">
-        <img src="pato.jpg" onclick="grande(this.src)">
+    <div class="galeria">
+        <img src="mico.jpg" onclick="mostrargrande(this.src)">
+        <img src="buo.jpg" onclick="mostrargrande(this.src)">  
+        <img src="colibri.jpg" onclick="mostrargrande(this.src)">
+        <img src="loro.jpg" onclick="mostrargrande(this.src)">
+        <img src="pato.jpg" onclick="mostrargrande(this.src)">
     </div>
         <img id="grande" src ="mico.jpg">
 </body>
